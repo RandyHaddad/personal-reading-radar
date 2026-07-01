@@ -1,6 +1,6 @@
 # Reading Experience
 
-The radar should learn not only what the user likes to read, but how the user likes to digest it.
+The loop should learn not only what the user likes to read, but how the user likes to digest it.
 
 ## Principle
 

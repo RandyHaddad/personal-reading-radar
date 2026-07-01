@@ -1,6 +1,6 @@
 .DS_Store
 
-# User-specific radar state should not be committed.
+# User-specific loop state should not be committed.
 state/
 profiles/
 *.jsonl

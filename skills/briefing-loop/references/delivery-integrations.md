@@ -12,7 +12,7 @@ For each delivery target:
 4. Use the lowest-friction setup path the harness can actually operate: connector, MCP, API, SMTP, browser automation, computer use, local file, or manual fallback.
 5. Do as much setup and verification as possible without involving the user.
 6. Ask the user only for sign-in, approval, credentials, account setup, or destination details the agent cannot obtain.
-7. Store secrets only in a secret manager/keychain, never in radar memory.
+7. Store secrets only in a secret manager/keychain, never in loop memory.
 8. Send a small test artifact before relying on the route.
 9. Distinguish transport success from delivery success. A connector, SMTP server, or API may report `sent` before the destination accepts or renders the artifact.
 10. When possible, check for bounce/error replies, delivery receipts, destination-side status, or first-delivery user confirmation before marking the route reliable.
@@ -73,6 +73,6 @@ Rules:
 
 ## Scheduling
 
-If the harness supports native scheduled tasks, use that. Otherwise prepare a cron/system scheduler command that runs the radar workflow.
+If the harness supports native scheduled tasks, use that. Otherwise prepare a cron/system scheduler command that runs the loop workflow.
 
 Keep the schedule separate from taste memory. If a schedule prompt duplicates workflow instructions, shorten it and point back to the skill/state files.

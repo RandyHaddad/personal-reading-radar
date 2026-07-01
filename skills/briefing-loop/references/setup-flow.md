@@ -7,7 +7,7 @@ Use the lightest setup that can produce a useful first sweep.
 Say this in substance, not necessarily verbatim:
 
 ```text
-I can set up a personal reading radar. It improves from our interactions: what you open, reject, save, send, ask about, or ignore. First I only need the delivery surface, how you like to digest things, cadence, and the easiest way to learn your taste.
+I can set up a briefing loop. It improves from our interactions: what you open, reject, save, send, ask about, or ignore. First I only need the delivery surface, how you like to digest things, cadence, and the easiest way to learn your taste.
 ```
 
 ## Step 1: Delivery Surface
@@ -95,7 +95,7 @@ Ask specific questions only to fill gaps:
 Create a transparent memory directory. Prefer a user-visible path such as:
 
 ```text
-~/.reading-radar/<radar-name>/
+~/.briefing-loop/<loop-name>/
 ```
 
 If the harness has a project-local convention, use that and tell the user.
@@ -103,7 +103,7 @@ If the harness has a project-local convention, use that and tell the user.
 Run:
 
 ```bash
-python3 scripts/init_radar_state.py --path <memory-path> --name "<radar name>"
+python3 scripts/init_loop_state.py --path <memory-path> --name "<loop name>"
 ```
 
 ## Step 6: Calibration

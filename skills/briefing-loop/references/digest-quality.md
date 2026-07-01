@@ -1,6 +1,6 @@
 # Digest Quality
 
-A reading radar should prepare the user's attention, not merely list links.
+A briefing loop should prepare the user's attention, not merely list links.
 
 ## Required Per Item
 
@@ -31,7 +31,7 @@ Do not bury oldness. Label it.
 
 ## Discovery Mix
 
-Do not optimize only for "more of what already worked." A useful radar balances:
+Do not optimize only for "more of what already worked." A useful loop balances:
 
 - high-confidence items that match known taste;
 - adjacent items that stretch the taste model;

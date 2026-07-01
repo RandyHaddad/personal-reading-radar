@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Append a JSONL event to a personal reading radar state file."""
+"""Append a JSONL event to a briefing loop state file."""
 
 from __future__ import annotations
 
@@ -19,7 +19,7 @@ ALLOWED_FILES = {
 
 def main() -> int:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--path", required=True, help="Radar memory directory")
+    parser.add_argument("--path", required=True, help="Briefing loop memory directory")
     parser.add_argument("--kind", required=True, choices=sorted(ALLOWED_FILES))
     parser.add_argument("--item", required=True)
     parser.add_argument("--url", default="")

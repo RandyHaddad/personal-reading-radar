@@ -1,11 +1,11 @@
 {
-  "name": "personal-reading-radar",
+  "name": "briefing-loop",
   "description": "A learned personal reading digest that verifies sources and delivers to chat, email, Slack, PDF/EPUB, or Kindle.",
   "author": {
     "name": "Randy Haddad"
   },
-  "homepage": "https://github.com/RandyHaddad/personal-reading-radar",
-  "repository": "https://github.com/RandyHaddad/personal-reading-radar",
+  "homepage": "https://github.com/RandyHaddad/briefing-loop",
+  "repository": "https://github.com/RandyHaddad/briefing-loop",
   "license": "MIT",
   "keywords": [
     "agent-skills",

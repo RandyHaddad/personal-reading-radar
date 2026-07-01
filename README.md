@@ -1,4 +1,4 @@
-# Personal Reading Radar
+# Briefing Loop
 
 A harness-agnostic Agent Skill for a learned reading digest.
 
@@ -9,15 +9,15 @@ It helps an agent learn what a user likes to read, verify sources/dates/recency,
 ### Claude Code
 
 ```text
-/plugin marketplace add RandyHaddad/personal-reading-radar
-/plugin install personal-reading-radar@personal-reading-radar
+/plugin marketplace add RandyHaddad/briefing-loop
+/plugin install briefing-loop@briefing-loop
 /reload-plugins
 ```
 
 Then run:
 
 ```text
-/personal-reading-radar:personal-reading-radar
+/briefing-loop:briefing-loop
 ```
 
 ### Codex
@@ -30,14 +30,14 @@ Use this repo as a Codex plugin. The plugin manifest is at:
 
 ### Other Agents
 
-Install the folder at `skills/personal-reading-radar` anywhere your Agent Skills-compatible harness reads skills from.
+Install the folder at `skills/briefing-loop` anywhere your Agent Skills-compatible harness reads skills from.
 
 ## Use
 
 Ask your agent:
 
 ```text
-Use personal-reading-radar to set up my reading digest.
+Use briefing-loop to set up my reading digest.
 ```
 
 The skill keeps user-specific state outside the skill package. Do not commit personal profiles, delivery addresses, credentials, or digest logs.

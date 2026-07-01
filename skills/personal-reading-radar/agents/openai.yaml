@@ -1,4 +1,0 @@
-interface:
-  display_name: "Personal Reading Radar"
-  short_description: "Learned reading digest and delivery loop"
-  default_prompt: "Use $personal-reading-radar to set up a personal reading radar that learns my preferences and delivers a recurring digest."

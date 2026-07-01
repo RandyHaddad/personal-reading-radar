@@ -1,22 +1,22 @@
 {
-  "name": "personal-reading-radar",
+  "name": "briefing-loop",
   "owner": {
     "name": "Randy Haddad"
   },
-  "description": "Personal Reading Radar Claude Code plugin marketplace",
+  "description": "Briefing Loop Claude Code plugin marketplace",
   "metadata": {
-    "description": "Personal Reading Radar Claude Code plugin marketplace"
+    "description": "Briefing Loop Claude Code plugin marketplace"
   },
   "plugins": [
     {
-      "name": "personal-reading-radar",
+      "name": "briefing-loop",
       "source": "./",
       "description": "A learned personal reading digest that verifies sources and delivers to chat, email, Slack, PDF/EPUB, or Kindle.",
       "author": {
         "name": "Randy Haddad"
       },
-      "homepage": "https://github.com/RandyHaddad/personal-reading-radar",
-      "repository": "https://github.com/RandyHaddad/personal-reading-radar",
+      "homepage": "https://github.com/RandyHaddad/briefing-loop",
+      "repository": "https://github.com/RandyHaddad/briefing-loop",
       "license": "MIT",
       "keywords": [
         "agent-skills",

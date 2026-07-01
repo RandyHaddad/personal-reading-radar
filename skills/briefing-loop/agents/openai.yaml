@@ -1,0 +1,4 @@
+interface:
+  display_name: "Briefing Loop"
+  short_description: "Learned reading digest and delivery loop"
+  default_prompt: "Use $briefing-loop to set up a briefing loop that learns my preferences and delivers a recurring digest."

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Initialize transparent state files for a personal reading radar."""
+"""Initialize transparent state files for a briefing loop."""
 
 from __future__ import annotations
 
@@ -17,8 +17,8 @@ def write_if_missing(path: Path, content: str) -> bool:
 
 def main() -> int:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--path", required=True, help="Directory for radar memory files")
-    parser.add_argument("--name", default="Personal Reading Radar")
+    parser.add_argument("--path", required=True, help="Directory for loop memory files")
+    parser.add_argument("--name", default="Briefing Loop")
     args = parser.parse_args()
 
     root = Path(args.path).expanduser().resolve()
@@ -35,7 +35,7 @@ Updated: {today}
 
 ## Goal
 
-Maintain a personal reading radar that learns from interaction and delivers reading candidates where the user wants to read them.
+Maintain a briefing loop that learns from interaction and delivers reading candidates where the user wants to read them.
 
 ## Delivery
 
@@ -81,7 +81,7 @@ None yet.
         if write_if_missing(root / filename, content):
             created.append(filename)
 
-    print(f"Radar state: {root}")
+    print(f"Briefing loop state: {root}")
     if created:
         print("Created:")
         for filename in created:

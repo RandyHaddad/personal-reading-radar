@@ -1,13 +1,13 @@
 ---
-name: personal-reading-radar
-description: Set up and run a harness-agnostic personal reading radar that learns a user's reading taste over time, builds recurring digests from articles, feeds, newsletters, papers, X posts, videos, podcasts, or existing digests, verifies links/dates/recency, maintains transparent memory, and delivers to the user's chosen surfaces such as chat, email, Slack, PDF/EPUB, or Kindle. Use when the user wants a daily/weekly reading digest, a learned recommendation loop, source watchlist, Kindle send workflow, catch-up tracker, or feedback-driven reading system.
+name: briefing-loop
+description: Set up and run a harness-agnostic briefing loop that learns a user's reading taste over time, builds recurring digests from articles, feeds, newsletters, papers, X posts, videos, podcasts, or existing digests, verifies links/dates/recency, maintains transparent memory, and delivers to the user's chosen surfaces such as chat, email, Slack, PDF/EPUB, or Kindle. Use when the user wants a daily/weekly reading digest, a learned recommendation loop, source watchlist, Kindle send workflow, catch-up tracker, or feedback-driven reading system.
 ---
 
-# Personal Reading Radar
+# Briefing Loop
 
 ## Overview
 
-Create and operate a personal reading radar. The radar learns from normal interaction, keeps its memory in inspectable files, verifies sources and recency, and delivers the digest where the user actually reads.
+Create and operate a briefing loop. The loop learns from normal interaction, keeps its memory in inspectable files, verifies sources and recency, and delivers the digest where the user actually reads.
 
 This skill is harness-agnostic. Use the host environment's available tools for search, browsing, email, Slack, scheduled tasks, cron, file creation, or secret storage. Do not assume a specific agent product.
 
@@ -25,7 +25,7 @@ Codex/chat/workspace may be the control surface, but it is not always the readin
 
 ## First Setup
 
-Read [setup-flow.md](references/setup-flow.md) when creating or changing a radar.
+Read [setup-flow.md](references/setup-flow.md) when creating or changing a loop.
 
 Default setup sequence:
 
@@ -33,10 +33,10 @@ Default setup sequence:
 2. Ask how the user likes to digest material: terse bullets, visual cards, images, HTML explainer, quiz, PDF/EPUB, audio-style brief, or another format.
 3. Ask cadence and timezone only if scheduling is requested or implied.
 4. Ask the easiest way to learn taste: pasted links, feed/browser/newsletter inspection, existing digest comparison, or a few specific questions.
-5. Create the memory home with `scripts/init_radar_state.py` when file access is available.
+5. Create the memory home with `scripts/init_loop_state.py` when file access is available.
 6. Run a small calibration sweep before relying on automation.
 
-Frame setup lightly: the radar improves from ongoing interaction, so the first questions only reduce obvious mistakes.
+Frame setup lightly: the loop improves from ongoing interaction, so the first questions only reduce obvious mistakes.
 
 ## Memory
 
@@ -74,7 +74,7 @@ Delivery rules:
 - Inspect connected MCPs/connectors, browser/computer-use capabilities, local config, and existing user context before asking the user to set up anything new.
 - Detect available integrations when possible and show status plainly: connected, not connected, unavailable, or unknown.
 - Ask for sign-in, credentials, or app setup only when the harness cannot do it.
-- Store secrets only in the host's secret manager/keychain, never in radar memory.
+- Store secrets only in the host's secret manager/keychain, never in loop memory.
 - Send a small test artifact before depending on a delivery route.
 - Treat `sent` as transport status, not proof that the destination accepted or rendered the item.
 - Do not send to Kindle unless the user approves the item or explicitly configures auto-send.
@@ -108,4 +108,4 @@ Treat these as preference learning:
 - style was too long, too shallow, too technical, or too broad;
 - item was too old, already read, or worth sending.
 
-System fixes update the skill/workflow. Preference learning updates radar memory.
+System fixes update the skill/workflow. Preference learning updates loop memory.

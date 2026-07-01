@@ -5,7 +5,7 @@ Use transparent memory so each run can start fresh without losing taste.
 ## Recommended State Layout
 
 ```text
-reading-radar/
+briefing-loop/
   profile.md
   sources.md
   feedback.jsonl
@@ -94,7 +94,7 @@ After memory changes, briefly say what changed and why: promoted to profile, kep
 
 Separate personal preference learning from reusable system fixes. Delivery-surface bugs, broken state semantics, missing verification, unclear setup, or bad default workflow are system issues.
 
-For a local system issue, fix the local radar. If the fix may help other users, ask in this tone:
+For a local system issue, fix the local loop. If the fix may help other users, ask in this tone:
 
 ```text
 This looks like a reusable fix. I'll apply it here. If you think it's worth sharing, I'd really appreciate the chance to open a PR so everyone else gets the improvement too.
