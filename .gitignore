@@ -1,0 +1,10 @@
+.DS_Store
+
+# User-specific radar state should not be committed.
+state/
+profiles/
+*.jsonl
+
+# Local secrets/config.
+.env
+.env.*

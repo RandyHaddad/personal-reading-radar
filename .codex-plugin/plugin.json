@@ -1,0 +1,36 @@
+{
+  "name": "personal-reading-radar",
+  "version": "0.1.0",
+  "description": "A learned personal reading digest that verifies sources and delivers to chat, email, Slack, PDF/EPUB, or Kindle.",
+  "author": {
+    "name": "Randy Haddad"
+  },
+  "homepage": "https://github.com/randyhaddad/personal-reading-radar",
+  "repository": "https://github.com/randyhaddad/personal-reading-radar",
+  "license": "MIT",
+  "keywords": [
+    "agent-skills",
+    "reading",
+    "digest",
+    "recommendations",
+    "kindle",
+    "research"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Personal Reading Radar",
+    "shortDescription": "Learned reading digest and delivery loop",
+    "longDescription": "Set up a personal reading radar that learns from interactions, verifies links, dates, and recency, avoids repeats, and delivers digests to the surfaces a user chooses.",
+    "developerName": "Randy Haddad",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "defaultPrompt": [
+      "Set up a personal reading radar for me.",
+      "Run my reading digest and learn from my feedback."
+    ]
+  }
+}
