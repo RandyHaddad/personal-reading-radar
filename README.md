@@ -1,16 +1,31 @@
 # Briefing Loop
 
-A harness-agnostic Agent Skill for a learned reading digest.
+Daily digest that:
 
-It helps an agent learn what a user likes to read, verify sources/dates/recency, avoid repeats, and deliver digests to the user's chosen surfaces: chat, email, Slack, PDF/EPUB, Kindle, or another available integration.
+- can send specific readings to your Kindle;
+- sets up an initial profile from links you send;
+- continuously learns preferences from what you read, save, reject, send, or ask about;
+- adds articles, newsletters, papers, YouTube, X posts, podcasts, and existing digests to the mix;
+- verifies sources, authors, dates, and recency;
+- avoids repeats unless there is a reason to resurface something;
+- delivers the digest where you actually read: chat, email, Slack, PDF/EPUB, files, or another available surface;
+- keeps profile and history files inspectable.
 
 ## Install
 
 ### Claude Code
 
+Run these one at a time inside Claude Code:
+
 ```text
-/plugin marketplace add RandyHaddad/briefing-loop
+/plugin marketplace add https://github.com/RandyHaddad/briefing-loop.git
+```
+
+```text
 /plugin install briefing-loop@briefing-loop
+```
+
+```text
 /reload-plugins
 ```
 

@@ -1,6 +1,6 @@
 {
   "name": "briefing-loop",
-  "description": "A learned personal reading digest that verifies sources and delivers to chat, email, Slack, PDF/EPUB, or Kindle.",
+  "description": "A learned personal reading digest that verifies sources, delivers briefings to chosen surfaces, and can send approved readings to Kindle.",
   "author": {
     "name": "Randy Haddad"
   },

@@ -1,6 +1,6 @@
 # Delivery Integrations
 
-Delivery is user-chosen. The agent controls setup and memory, but the readable artifact should land where the user actually reads.
+Delivery is user-chosen. The agent controls setup and memory, but the readable digest should land where the user actually reads. Keep digest delivery separate from read-later sends: Kindle is normally for specific approved readings, not the whole digest.
 
 ## General Integration Pattern
 
@@ -52,7 +52,7 @@ For EPUB:
 
 ## Kindle
 
-Kindle delivery is optional and should usually be approval-based.
+Kindle delivery is optional and should usually be approval-based. By default, use it for specific readings the user chooses after seeing the digest, not for the digest itself.
 
 Fast setup:
 

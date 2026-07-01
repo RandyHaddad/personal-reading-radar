@@ -1,6 +1,6 @@
 ---
 name: briefing-loop
-description: Set up and run a harness-agnostic briefing loop that learns a user's reading taste over time, builds recurring digests from articles, feeds, newsletters, papers, X posts, videos, podcasts, or existing digests, verifies links/dates/recency, maintains transparent memory, and delivers to the user's chosen surfaces such as chat, email, Slack, PDF/EPUB, or Kindle. Use when the user wants a daily/weekly reading digest, a learned recommendation loop, source watchlist, Kindle send workflow, catch-up tracker, or feedback-driven reading system.
+description: Set up and run a harness-agnostic briefing loop that learns a user's reading taste over time, builds recurring digests from articles, feeds, newsletters, papers, X posts, videos, podcasts, or existing digests, verifies links/dates/recency, maintains transparent memory, delivers digests to the user's chosen surfaces such as chat, email, Slack, or PDF/EPUB, and can send approved individual readings to Kindle. Use when the user wants a daily/weekly reading digest, a learned recommendation loop, source watchlist, Kindle send workflow, catch-up tracker, or feedback-driven reading system.
 ---
 
 # Briefing Loop
@@ -11,6 +11,8 @@ Create and operate a briefing loop. The loop learns from normal interaction, kee
 
 This skill is harness-agnostic. Use the host environment's available tools for search, browsing, email, Slack, scheduled tasks, cron, file creation, or secret storage. Do not assume a specific agent product.
 
+Use the name "Briefing Loop" in user-facing responses. Do not call it a radar, feed, newsletter bot, Kindle sender, or generic digest generator.
+
 ## Operating Model
 
 Keep these responsibilities separate:
@@ -19,9 +21,9 @@ Keep these responsibilities separate:
 - `discovery`: gather candidates from links, feeds, search, newsletters, X posts, videos, podcasts, papers, or existing digests.
 - `digestion`: explain what is worth understanding, with links, dates, recency, and a reading experience that fits the user.
 - `learning`: update transparent memory from interactions, feedback, reads, saves, sends, and ignores.
-- `delivery`: send or render the digest through the user's chosen surface.
+- `delivery`: send or render the digest through the user's chosen surface, and send selected readings to read-later destinations such as Kindle only when approved or configured.
 
-Codex/chat/workspace may be the control surface, but it is not always the reading surface. Honor the user's chosen delivery target.
+Codex/chat/workspace may be the control surface, but it is not always the reading surface. Honor the user's chosen delivery target. Do not treat Kindle as the default digest surface; by default it is for specific approved readings.
 
 ## First Setup
 
@@ -37,6 +39,8 @@ Default setup sequence:
 6. Run a small calibration sweep before relying on automation.
 
 Frame setup lightly: the loop improves from ongoing interaction, so the first questions only reduce obvious mistakes.
+
+Do not ask the user to name the loop as the first setup question. Use "Briefing Loop" as the default name and only ask for a custom name if creating a memory directory or managing multiple loops makes the name necessary.
 
 ## Memory
 

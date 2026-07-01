@@ -2,6 +2,8 @@
 
 Use the lightest setup that can produce a useful first sweep.
 
+Do not start by asking the user to name the loop. Start with delivery surface. Use "Briefing Loop" as the default name until a custom name is actually needed for memory or multiple loops.
+
 ## Setup Prompt
 
 Say this in substance, not necessarily verbatim:
@@ -12,14 +14,13 @@ I can set up a briefing loop. It improves from our interactions: what you open, 
 
 ## Step 1: Delivery Surface
 
-Ask where the user wants to read or receive the digest.
+Ask where the user wants to read or receive the digest. Keep this separate from approval-based read-later destinations such as Kindle.
 
 Common targets:
 
 - chat/workspace thread;
 - email;
 - Slack or Discord;
-- Kindle;
 - PDF or EPUB file;
 - local markdown;
 - Notion, Drive, Docs, or another connected store.
@@ -30,8 +31,14 @@ Detect available integrations when possible. Use plain status:
 Delivery options I can see:
 - Email: connected
 - Slack: not connected, can help set up
-- Kindle: not configured
 - Local PDF/EPUB: available
+```
+
+If Kindle is available or requested, frame it separately:
+
+```text
+Read-later sends:
+- Kindle: not configured; useful for approved individual readings, not the whole digest by default
 ```
 
 If the harness cannot inspect integrations, say so and ask the user to choose from available routes.
