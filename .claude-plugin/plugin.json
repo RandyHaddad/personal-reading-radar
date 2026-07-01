@@ -1,0 +1,19 @@
+{
+  "name": "personal-reading-radar",
+  "description": "A learned personal reading digest that verifies sources and delivers to chat, email, Slack, PDF/EPUB, or Kindle.",
+  "author": {
+    "name": "Randy Haddad"
+  },
+  "homepage": "https://github.com/RandyHaddad/personal-reading-radar",
+  "repository": "https://github.com/RandyHaddad/personal-reading-radar",
+  "license": "MIT",
+  "keywords": [
+    "agent-skills",
+    "reading",
+    "digest",
+    "recommendations",
+    "kindle",
+    "research"
+  ],
+  "skills": "./skills/"
+}

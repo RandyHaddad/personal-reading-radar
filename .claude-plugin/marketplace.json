@@ -1,0 +1,32 @@
+{
+  "name": "personal-reading-radar",
+  "owner": {
+    "name": "Randy Haddad"
+  },
+  "description": "Personal Reading Radar Claude Code plugin marketplace",
+  "metadata": {
+    "description": "Personal Reading Radar Claude Code plugin marketplace"
+  },
+  "plugins": [
+    {
+      "name": "personal-reading-radar",
+      "source": "./",
+      "description": "A learned personal reading digest that verifies sources and delivers to chat, email, Slack, PDF/EPUB, or Kindle.",
+      "author": {
+        "name": "Randy Haddad"
+      },
+      "homepage": "https://github.com/RandyHaddad/personal-reading-radar",
+      "repository": "https://github.com/RandyHaddad/personal-reading-radar",
+      "license": "MIT",
+      "keywords": [
+        "agent-skills",
+        "reading",
+        "digest",
+        "recommendations",
+        "kindle",
+        "research"
+      ],
+      "category": "productivity"
+    }
+  ]
+}

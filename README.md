@@ -6,21 +6,26 @@ It helps an agent learn what a user likes to read, verify sources/dates/recency,
 
 ## Install
 
+### Claude Code
+
+```text
+/plugin marketplace add RandyHaddad/personal-reading-radar
+/plugin install personal-reading-radar@personal-reading-radar
+/reload-plugins
+```
+
+Then run:
+
+```text
+/personal-reading-radar:personal-reading-radar
+```
+
 ### Codex
 
 Use this repo as a Codex plugin. The plugin manifest is at:
 
 ```text
 .codex-plugin/plugin.json
-```
-
-### Claude Code
-
-Copy the skill folder into Claude Code:
-
-```bash
-mkdir -p ~/.claude/skills
-cp -R skills/personal-reading-radar ~/.claude/skills/
 ```
 
 ### Other Agents
