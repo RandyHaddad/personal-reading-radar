@@ -1,7 +1,7 @@
 {
   "name": "briefing-loop",
   "version": "0.1.0",
-  "description": "A learned personal reading digest that verifies sources, delivers briefings to chosen surfaces, and can send approved readings to Kindle.",
+  "description": "Daily reading digest that learns your taste and can even send approved reads to Kindle.",
   "author": {
     "name": "Randy Haddad"
   },
@@ -19,8 +19,8 @@
   "skills": "./skills/",
   "interface": {
     "displayName": "Briefing Loop",
-    "shortDescription": "Learned reading digest and delivery loop",
-    "longDescription": "Set up a briefing loop that learns from interactions, verifies links, dates, and recency, avoids repeats, delivers digests to the surfaces a user chooses, and can send approved individual readings to Kindle.",
+    "shortDescription": "Daily reading digest that learns your taste",
+    "longDescription": "Daily reading digest that learns your taste, uses explore/exploit to mix strong fits with useful outliers, and can even send approved reads to Kindle.",
     "developerName": "Randy Haddad",
     "category": "Productivity",
     "capabilities": [

@@ -11,7 +11,7 @@
     {
       "name": "briefing-loop",
       "source": "./",
-      "description": "A learned personal reading digest that verifies sources, delivers briefings to chosen surfaces, and can send approved readings to Kindle.",
+      "description": "Daily reading digest that learns your taste and can even send approved reads to Kindle.",
       "author": {
         "name": "Randy Haddad"
       },

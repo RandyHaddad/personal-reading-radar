@@ -5,9 +5,9 @@ Daily digest that:
 - can send specific readings to your Kindle;
 - sets up an initial profile from links you send;
 - continuously learns preferences from what you read, save, reject, send, or ask about;
+- uses Spotify-style explore/exploit: mostly things that fit, sometimes outliers to learn your taste;
 - adds articles, newsletters, papers, YouTube, X posts, podcasts, and existing digests to the mix;
 - verifies sources, authors, dates, and recency;
-- avoids repeats unless there is a reason to resurface something;
 - delivers the digest where you actually read: chat, email, Slack, PDF/EPUB, files, or another available surface;
 - keeps profile and history files inspectable.
 
